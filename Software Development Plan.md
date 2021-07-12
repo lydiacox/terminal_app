@@ -37,10 +37,21 @@ The player(s) will run the program and be greeted by a welcome screen. It will d
 
 If 1 player is selected, the game will go directly to the first snowman scene.
 
-If 2 players is selected, Player 1 will be instructed to make sure that Player 2 cannot see the screen or keyboard, and to enter a word or phrase for Player 2 to guess. If any characters other than a - z, hyphen or space is entered, Player 1 will be instructed to enter a valid response. The game will then go to the first snowman scene.
+If 2 players is selected, Player 1 will be instructed to make sure that Player 2 cannot see the screen or keyboard, and to input a word or phrase for Player 2 to guess. If any characters other than a - z, hyphen or space is entered, Player 1 will be instructed to enter a valid response. The game will then go to the first snowman scene.
 
+The first snowman scene will show a fully formed snowman, with a head, torso, body, eyes and nose, hat and scarf. The number of letters in the word or phrase will also be depicted. To make it easy to read, every missing letter will be represented by a two underscores, each separated by a single space. Spaces will be indicated by a double space. Hyphens will be shown where they are.
 
+The player/Player 2 will be able it input their guess. They can either guess a single letter or the entire word or phrase. If they guess correctly, the snowman will remain the same and the correctly guessed letter will be revealed in all the spaces it occurs.
+
+If the player guesses a letter that had already been guessed, they will be asked to input another letter. This will not affect the snowman.
+
+If the player guesses incorrectly, a new snowman will be displayed, slightly melted. The displayed word will remain the same.
+
+With each incorrect guess, the snowman will lose his hat, scarf, eyes, nose, head, arms, and torso. After seven incorrect guesses, the game will be lost. A puddle will be displayed, along with the completed word or phrase.
+
+If the player guesses all the letters correctly, or guesses the entire word or phrase, the game will be won. A congratulatory screen will print with snowflake ascii art.
+
+Whether the game was won or lost, players will be asked if they want to play again, and can enter Y or N. N will exit the program, Y will take them back to the welcome screen.
 
 ## Control Flow Diagram
-
-## Implementation Plan
+![Screen shot of control flow diagram](/diagram.png)
