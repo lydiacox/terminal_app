@@ -54,4 +54,4 @@ If the player guesses all the letters correctly, or guesses the entire word or p
 Whether the game was won or lost, players will be asked if they want to play again, and can enter Y or N. N will exit the program, Y will take them back to the welcome screen.
 
 ## Control Flow Diagram
-![Screen shot of control flow diagram](/diagram.png)
+![Screen shot of control flow diagram](/docs/diagram.png)

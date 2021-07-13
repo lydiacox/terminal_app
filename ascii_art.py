@@ -250,7 +250,7 @@ snow_scenes = (
                                     *
           * 
               
-       *       ,._,,,..__..,,,,
+       *       ,._~~,.._~..~~,,
     """,
 )
 # This generated from https://fsymbols.com/generators/carty/
@@ -264,7 +264,7 @@ game_name = """
 ╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 """
 
-#sourced from https://www.asciiart.eu/nature/snows
+# sourced from https://www.asciiart.eu/nature/snows
 snowflakes = """
                      *  .  *
                    . _\/ \/_ .
