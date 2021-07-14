@@ -29,8 +29,10 @@ while not won:
         elif len(guess) == len(words):
             if guess == words:
                 print('YOU GOT IT!!')
+                won = True
         else:
             print('Please enter a single letter or guess the whole thing.')
+print(ascii_art.snowflakes)
         
 
 # Print hashed answer

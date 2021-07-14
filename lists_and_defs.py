@@ -18,12 +18,11 @@ def get_word(players):
         if players == '1':
             word = random.choice(dictionary)
         elif players == '2':
-            word = input('What word would you like Player 2 to guess? (A thru Z and spaces only.) Make sure they can\'t see your screen!:\n')
-            nospace = word.replace(' ','')
-            if not nospace.isalpha():
-                print('Please only use letters (a thru z) and spaces')
+            word = input('What word would you like Player 2 to guess? (A thru Z only.) Make sure they can\'t see your screen!:\n')
+            if not word.isalpha():
+                print('Please only use letters (a thru z)')
                 word = False
-            elif len(nospace) < 2:
+            elif len(word) < 2:
                 print('At least two characters, please.')
                 word = False
     return word.upper()
@@ -40,10 +39,8 @@ def hide(word):
 def get_guess():
     valid_guess = False
     while valid_guess == False:
-        valid_guess = input('Guess a letter or the answer: ').upper()
-        guess_nospace = valid_guess.replace(' ','')
-        if not guess_nospace.isalpha():
-            print('Only letters (a thru z) and spaces')
+        valid_guess = input('Guess a letter or word: ')
+        if not valid_guess.isalpha():
+            print('Only letters (a thru z)')
             valid_guess = False
-        else:
-            return valid_guess
+    return valid_guess.upper()

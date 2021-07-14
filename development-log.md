@@ -13,6 +13,8 @@ My next step will be to write sudo code to get the overall structure of my code 
 
 ## 14-07-2021
 
-I have written more than half of the code I'd planned on. I needed assistance getting my head around while loops, but once I had a better understanding of them, the rest of the code was much easier to write.
+I made really good progress yesterday. I have written more than half of the code I'd planned on. I needed assistance getting my head around while loops, but once I had a better understanding of them, the rest of the code was much easier to write.
 
-There are two features which are giving me a lot of grief. The first is clearing the terminal between turns, which is happening at the wrong moments and making it difficult/impossible to read the messages I'd typed up. The second is having spaces allowed in the words. Checking the entry is a valid a-z is easy, adding a space is more complicated. As these features are not strictly necessary for the game to function, I will take them out for now. If I have time at the end, I'll add them back in.
+Today has not been as productive. There are two features which are giving me a lot of grief. The first is clearing the terminal between turns, which is happening at the wrong moments and making it difficult/impossible to read the messages I'd typed up. The second is having spaces allowed in the words. Checking the entry is a valid a-z is easy, adding space as an allowable character is more complicated.
+
+As these features are not strictly necessary for the game to function, I will take them out for now. If I have time at the end, I'll add them back in.
