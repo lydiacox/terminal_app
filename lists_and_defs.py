@@ -3,9 +3,6 @@ import random
 # Got list from https://onlymyenglish.com/common-noun-list/
 dictionary = ["adult", "age", "amount", "area", "back", "bed", "blood", "body", "book", "box", "boy", "bulb", "bunch", "business", "camera", "chicken", "child", "chocolates", "city", "clothes", "colony", "colours", "company", "computer", "continent", "council", "country", "course", "cycle", "dates", "day", "death", "desk", "door", "egg", "face", "fact", "factory", "family", "farm", "farmer", "father", "fish", "floor", "flowers", "flood", "fridge", "food", "future", "game", "garden", "gas", "glass", "group", "health", "hill", "hospital", "idea", "image", "industry", "island", "jewellery", "job", "kitchen", "land", "law", "leaves", "leg", "letter", "life", "magazine", "market", "metal", "mirror", 'mobile', 'money', 'morning', 'mother', 'mountain', 'movie', 'name', 'nest', 'news', 'ocean', 'oil', 'painter', 'park', 'party', 'pen', 'pencil', 'person', 'picture', 'pillow', 'place', 'plant', 'pond','rain', 'rate', 'result', 'ring', 'road', 'rock', 'rocket', 'room', 'rope', 'rule', 'sale', 'school', 'shape', 'ship', 'shop', 'sister', 'site', 'skin', 'snacks', 'son', 'song', 'sort', 'sound', 'soup', 'sports', 'state', 'stone', 'street', 'system', 'taxi', 'tea', 'teacher', 'team', 'toy', 'tractor', 'trade', 'train', 'video', 'view', 'water', 'waterfall', 'week', 'women', 'wood', 'word', 'year', 'yesterday']
 
-# def clear_screen:
-
-
 def get_players():
     players = False
     while players == False:
@@ -39,3 +36,14 @@ def hide(word):
         else:
             hidden += ' '
     return hidden
+
+def get_guess():
+    valid_guess = False
+    while valid_guess == False:
+        valid_guess = input('Guess a letter or the answer: ').upper()
+        guess_nospace = valid_guess.replace(' ','')
+        if not guess_nospace.isalpha():
+            print('Only letters (a thru z) and spaces')
+            valid_guess = False
+        else:
+            return valid_guess

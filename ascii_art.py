@@ -84,35 +84,7 @@ snow_scenes = (
               \\                 /
        *       \\_______________/
     """,
-# fourth snowman scene, no eyes
-    """
-    
-         *
-           *                      *
-      *                        *
-     
-              *     -------          *
-                   /       \\
-         *        (         ) *    *
-                  (    ---> )   *
-                  (   `---' )
-           *       \\_______/        *
-       *          /         \\
-                 /           \\   *
-                |      *      |
-         >------|      *      |------<
-        *       |      *      |      *
-                 \\___________/  *
-          *     /             \\
-      *        /               \\   *
-              /                 \\
-             (                   )
-             (                   )  *
-          *  (                   )
-              \\                 /
-       *       \\_______________/
-    """,
-# fifth snowman scene, no nose
+# fourth snowman scene, no eyes or nose
     """
     
          *
@@ -140,7 +112,7 @@ snow_scenes = (
               \\                 /
        *       \\_______________/
     """,
-# sixth snowman scene, no head
+# fifth snowman scene, no head
     """
     
          *
@@ -168,7 +140,7 @@ snow_scenes = (
               \\                 /
        *       \\_______________/
     """,
-# seventh snowman scene, no arms
+# sixth snowman scene, no arms
     """
     
          *
@@ -196,7 +168,7 @@ snow_scenes = (
               \\                 /
        *       \\_______________/
     """,
-# eigth snowman scene, no torso
+# seventh snowman scene, no torso
     """
     
          *
@@ -224,7 +196,7 @@ snow_scenes = (
               \\                 /
        *       \\_______________/
     """,
-# ninth snowman scene, puddle
+# eigth snowman scene, puddle
     """
     
          *
