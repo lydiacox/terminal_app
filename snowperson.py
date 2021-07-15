@@ -10,21 +10,22 @@ while not won:
     players = lists_and_defs.get_players()
     word = lists_and_defs.get_word(players)
     lists_and_defs.clear_screen()
-    print('Let\'s play Snowman!')
+    message = 'Let\'s play Snowman!'
     hidden = lists_and_defs.hide(word)
     while melts < 7:
         print(ascii_art.snow_scenes[melts])
+        print(message)
         print(hidden)
         guess = lists_and_defs.valid_guess()
         if len(guess) == 1:
             if guess in letters_guessed:
-                print('Choose another letter, you already guessed that one.')
+                message = 'Choose another letter, you already guessed that one.'
             elif not guess in word:
-                print('Nope, try again!')
+                message = 'Nope, try again!'
                 melts += 1
                 letters_guessed.append(guess)
             else:
-                print('Yep, you got one!')
+                message = 'Yep, you got one!'
                 letters_guessed.append(guess)
                 hidden = lists_and_defs.currently_revealed(guess, word, hidden)
                 if hidden == word:
@@ -35,7 +36,7 @@ while not won:
                 won = True
                 melts = 9
             else:
-                print('Nope, that\'s not it!')
+                message = 'Nope, that\'s not it!'
                 melts += 1
         else:
             print('Please enter a single letter or guess the whole word.')
