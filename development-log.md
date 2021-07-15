@@ -18,3 +18,6 @@ I made really good progress yesterday. I have written more than half of the code
 Today has not been as productive. There are two features which are giving me a lot of grief. The first is clearing the terminal between turns, which is happening at the wrong moments and making it difficult/impossible to read the messages I'd typed up. The second is having spaces allowed in the words. Checking the entry is a valid a-z is easy, adding space as an allowable character is more complicated.
 
 As these features are not strictly necessary for the game to function, I will take them out for now. If I have time at the end, I'll add them back in.
+
+## 15-07-2021
+

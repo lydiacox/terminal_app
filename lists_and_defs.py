@@ -29,25 +29,16 @@ def get_word(players):
     return word.upper()
 
 def hide(word):
-    hidden = '_ ' * len(word)
+    hidden = '_' * len(word)
     return hidden
 
-def is_guessed(word, letters_guessed):
-    count = 0
-    for i, c in enumerate(word):
-        if c in letters_guessed:
-            count += 1
-    if count == len(word):
-        return True
-    else:
-        return False
-
-def guessed_word(guess, hidden):
-    word_list = list(hidden)
-    indices = [i for i, letter in enumerate(hidden) if letter == guess]
-    for index in indices:
-        word_list[index] = guess
-    hidden = ''.join(word_list)
+# def guessed_word(guess, hidden):
+#     listed_word = list(hidden)
+#     indices = [i for i, letter in enumerate(hidden) if letter == guess]
+#     for index in indices:
+#         listed_word[index] = guess
+#     hidden_word = ''.join(listed_word)
+#     return hidden_word
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -59,7 +50,7 @@ def valid_guess():
         if not valid_guess.isalpha():
             print('Only letters (a thru z)')
             valid_guess = False
-    return valid_guess
+    return valid_guess.upper().strip()
 
 def play_again():
     again = False
@@ -69,3 +60,10 @@ def play_again():
             print('Please enter "Y" or "N"')
             again = False
     return again.upper()
+
+def currently_revealed(guess, word, hidden):
+    hidden = list(hidden)
+    for index, letter in enumerate(word):
+        if guess == letter:
+            hidden[index] = guess
+    return ''.join(hidden)

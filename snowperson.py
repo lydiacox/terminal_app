@@ -6,37 +6,40 @@ melts = 0
 letters_guessed = []
 print(ascii_art.game_name)
 print('Welcome to Snowman! Guess the word or your Snowman will melt!')
-while won == False and melts <= 8:
+while not won:
     players = lists_and_defs.get_players()
     word = lists_and_defs.get_word(players)
-    hidden = lists_and_defs.hide(word)
     lists_and_defs.clear_screen()
     print('Let\'s play Snowman!')
-    print(ascii_art.snow_scenes[melts])
-    guess = lists_and_defs.valid_guess()
-    if len(guess) == 1:
-        if guess in letters_guessed:
-            print('Choose another letter, you already guessed that one.')
-        elif guess not in word:
-            print('Nope, try again!')
-            letters_guessed.append(guess)
-            melts += 1
-        else:
-            print('Yep, you got one!')
-            letters_guessed.append(guess)
-            hidden_word = lists_and_defs.guessed_word(guess, hidden)
-            if '_' not in hidden_word:
+    # generate currently revealed word
+    hidden = lists_and_defs.hide(word)
+    while melts <= 8:
+        print(ascii_art.snow_scenes[melts])
+        guess = lists_and_defs.valid_guess()
+        if len(guess) == 1:
+            if guess in letters_guessed:
+                print('Choose another letter, you already guessed that one.')
+            elif not guess in word:
+                print('Nope, try again!')
+                melts += 1
+                letters_guessed.append(guess)
+            else:
+                print('Yep, you got one!')
+                letters_guessed.append(guess)
+                hidden = lists_and_defs.currently_revealed(guess, word, hidden)
+                print(len(hidden), len(word))
+                if hidden == word:
+                    won = True
+                    melts = 9
+        elif len(guess) == len(word):
+            if guess == word:
                 won = True
-    elif len(guess) == len(word):
-        if guess == word:
-            won = True
+                melts = 9
+            else:
+                print('Nope, that\'s not it!')
+                melts += 1
         else:
-            print('Nope, that\'s not it!')
-            melts += 1
-    else:
-        print('Please enter a single letter or guess the whole word.')
-    print(ascii_art.snow_scenes[melts])
-    print(lists_and_defs.guessed_word)
+            print('Please enter a single letter or guess the whole word.')
 if won:
     print(f'YOU GOT IT! {word} was the word!')
 else:
