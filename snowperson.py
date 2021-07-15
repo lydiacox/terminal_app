@@ -1,12 +1,12 @@
 import lists_and_defs
 import ascii_art
 
-won = False
+won_lost = False
 melts = 0
 letters_guessed = []
 print(ascii_art.game_name)
 print('Welcome to Snowman! Guess the word or your Snowman will melt!')
-while not won:
+while won_lost == False:
     players = lists_and_defs.get_players()
     word = lists_and_defs.get_word(players)
     lists_and_defs.clear_screen()
@@ -29,11 +29,11 @@ while not won:
                 letters_guessed.append(guess)
                 hidden = lists_and_defs.currently_revealed(guess, word, hidden)
                 if hidden == word:
-                    won = True
+                    won_lost = 'Won'
                     melts = 9
         elif len(guess) == len(word):
             if guess == word:
-                won = True
+                won_lost = 'Won'
                 melts = 9
             else:
                 message = 'Nope, that\'s not it!'
@@ -43,6 +43,7 @@ while not won:
     if melts == 8:
         print(ascii_art.snow_scenes[8])
         print(f'Your snowman melted! :-( The word was {word}. Better luck next time!')
+        won_lost = 'Lost'
 print(ascii_art.snowflakes)
 print(f'YOU GOT IT! {word} was the word!')
 again = lists_and_defs.play_again()
