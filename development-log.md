@@ -26,3 +26,5 @@ After great difficulty working out how to reveal only the guessed letters in the
 The clear screen feature is working, but I will likely only use it at the start of the game, after the secret word has been selected or typed. Turns out that *was* necessary, or player 2 would see the answer before they started.
 
 The code itself could also probably be cleaned up a bit. Some of the functions can't be kept in the list_and_defs.py file, because they append lists kept in snowperson.py, and linking both files to eachother creates an infinite loop, but that doesn't mean I can't make the whole thing easier to read.
+
+I also realised that the ascii art of snowflakes hadn't added '\\' for every '\' to be printed, so I went through and fixed those.

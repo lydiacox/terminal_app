@@ -15,6 +15,7 @@ while not won:
     hidden = lists_and_defs.hide(word)
     while melts <= 8:
         print(ascii_art.snow_scenes[melts])
+        print(hidden)
         guess = lists_and_defs.valid_guess()
         if len(guess) == 1:
             if guess in letters_guessed:
@@ -27,7 +28,6 @@ while not won:
                 print('Yep, you got one!')
                 letters_guessed.append(guess)
                 hidden = lists_and_defs.currently_revealed(guess, word, hidden)
-                print(len(hidden), len(word))
                 if hidden == word:
                     won = True
                     melts = 9
