@@ -52,12 +52,3 @@ if again == 'Y':
     letters_guessed = []
 else:
     exit()
-        
-
-# Print hashed answer
-# Input guess, check it is an allowable character, check if it's in the answer
-# Print next snowman scene and hashed answer
-# End LOOP
-# If guessed correctly, show win scene and the word
-# If guesssed incorrectly, show puddle and the word
-# Ask if they want to play again

@@ -21,3 +21,8 @@ As these features are not strictly necessary for the game to function, I will ta
 
 ## 15-07-2021
 
+After great difficulty working out how to reveal only the guessed letters in the word, I have had a breakthrough and my application is now at minimum viable product. The play again feature isn't working as it should, and further testing of all the features is required, but the game works!
+
+The clear screen feature is working, but I will likely only use it at the start of the game, after the secret word has been selected or typed. Turns out that *was* necessary, or player 2 would see the answer before they started.
+
+The code itself could also probably be cleaned up a bit. Some of the functions can't be kept in the list_and_defs.py file, because they append lists kept in snowperson.py, and linking both files to eachother creates an infinite loop, but that doesn't mean I can't make the whole thing easier to read.

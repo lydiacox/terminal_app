@@ -32,14 +32,6 @@ def hide(word):
     hidden = '_' * len(word)
     return hidden
 
-# def guessed_word(guess, hidden):
-#     listed_word = list(hidden)
-#     indices = [i for i, letter in enumerate(hidden) if letter == guess]
-#     for index in indices:
-#         listed_word[index] = guess
-#     hidden_word = ''.join(listed_word)
-#     return hidden_word
-
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
