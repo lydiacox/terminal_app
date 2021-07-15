@@ -48,7 +48,7 @@ def play_again():
     again = False
     while again == False:
         again = input('Do you want to play again? (Y/N): ').upper
-        if (again() != 'Y') and (again != 'N'):
+        if (again != 'Y') and (again != 'N'):
             print('Please enter "Y" or "N"')
             again = False
     return again

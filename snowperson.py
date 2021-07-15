@@ -11,9 +11,8 @@ while not won:
     word = lists_and_defs.get_word(players)
     lists_and_defs.clear_screen()
     print('Let\'s play Snowman!')
-    # generate currently revealed word
     hidden = lists_and_defs.hide(word)
-    while melts <= 8:
+    while melts < 7:
         print(ascii_art.snow_scenes[melts])
         print(hidden)
         guess = lists_and_defs.valid_guess()
@@ -40,11 +39,11 @@ while not won:
                 melts += 1
         else:
             print('Please enter a single letter or guess the whole word.')
-if won:
-    print(f'YOU GOT IT! {word} was the word!')
-else:
-    print(f'Your snowman melted! :-( The word was {word}. Better luck next time!')
+    if melts == 8:
+        print(ascii_art.snow_scenes[8])
+        print(f'Your snowman melted! :-( The word was {word}. Better luck next time!')
 print(ascii_art.snowflakes)
+print(f'YOU GOT IT! {word} was the word!')
 again = lists_and_defs.play_again()
 if again == 'Y':
     won = False
