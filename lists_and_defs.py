@@ -47,11 +47,12 @@ def valid_guess():
 def play_again():
     again = False
     while again == False:
-        again = input('Do you want to play again? (Y/N): ').upper
-        if (again != 'Y') and (again != 'N'):
-            print('Please enter "Y" or "N"')
+        again = input('Do you want to play again? (Y/N): ').upper()
+        if again == 'Y' or again == 'N':
+            return again
+        else:
+            print('Please use Y or N')
             again = False
-    return again
 
 def currently_revealed(guess, word, hidden):
     hidden = list(hidden)
