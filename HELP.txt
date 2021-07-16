@@ -1,0 +1,24 @@
+Welcome to Snowman!
+
+Snowman is a word-guessing game for one or two players. Guess the word or your snowman will melt!
+
+Installation
+do chmod
+./script.sh
+Change "script" to "snowman"
+Do command line argument to open about
+
+
+System Requirements
+
+Anything that has a bash terminal.
+
+In order to run this app, you need Python 3. If you do not have Python 3, go to https://installpython3.com to download.
+
+
+MOVE THIS INTO AN ABOUT FILE
+Features
+
+1 or 2 Player mode
+
+In 2 Player Mode, Player 1 enters a word for Player 2 to guess. If you're stuck in your house due to the most recent COVID lockdown, or just don't have any friends, select 1 Player Mode and the game will select a word for you!
