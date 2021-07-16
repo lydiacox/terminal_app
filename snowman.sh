@@ -1,5 +1,6 @@
 #!/bin/bash
-if [[ $1 == 'about' ]]
+# echo ${1^^}
+if [[ $1 == 'about' || $1 == 'About' || $1 == 'ABOUT' ]]
 then
     cat ABOUT.txt
     exit 0

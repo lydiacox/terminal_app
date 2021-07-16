@@ -2,12 +2,17 @@ Installing and Running Snowman
 
 System Requirements
 
-Anything that has a bash terminal.
+This program is run in the terminal. If you're reading this, your computer very likely has a terminal.
 
-In order to run this app, you need Python 3. If you do not have Python 3, go to https://installpython3.com to download.
+In order to run this program, you need Python 3. If you do not have Python 3, go to https://installpython3.com to download.
 
 Installation
+
+
 do chmod
 ./script.sh
 Change "script" to "snowman"
 Do command line argument to open about
+
+Running the app
+
