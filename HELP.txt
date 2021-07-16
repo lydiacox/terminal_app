@@ -8,11 +8,16 @@ In order to run this program, you need Python 3. If you do not have Python 3, go
 
 Installation
 
+Download the files to a directory on your hard drive.
 
-do chmod
-./script.sh
-Change "script" to "snowman"
-Do command line argument to open about
+Running the Program
 
-Running the app
+Open your terminal, and navigate to the folder contaning this program.
+Enter the following text, followed by Enter/Return:
+chmod +x snowman.sh
 
+The enter the following text, followed by Enter/Return:
+./snowman.sh
+
+To open the ABOUT file, enter the following text, followed by Enter/Return:
+./snowman.sh about

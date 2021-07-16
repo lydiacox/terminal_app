@@ -1,6 +1,8 @@
 #!/bin/bash
-# echo ${1^^}
-if [[ $1 == 'about' || $1 == 'About' || $1 == 'ABOUT' ]]
+
+val=$(echo "$1"|tr a-z A-Z)
+
+if [[ $val == 'ABOUT' ]]
 then
     cat ABOUT.txt
     exit 0
