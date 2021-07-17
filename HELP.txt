@@ -9,15 +9,19 @@ Windows operating system with Linux Bash Shell
 Python 3.x
 Python 3 is required to run this program. If you do not have Python 3, go to https://installpython3.com to download.
 
+
 Installation
 
 Download the files to a directory on your hard drive.
 
-Running the Program
-
-Open terminal shell, and navigate to the folder contaning this program.
+Open terminal shell and navigate to the directory contaning this program.
 Enter the following text, followed by Enter/Return:
 chmod +x snowman.sh
+
+
+Running the Program
+
+Open terminal shell and navigate to the directory contaning this program.
 
 The enter the following text and press Enter/Return:
 ./snowman.sh

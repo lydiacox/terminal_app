@@ -225,6 +225,7 @@ snow_scenes = (
        *       ,._~~,.._~..~~,,
     """,
 )
+# Welcome screen
 # This generated from https://fsymbols.com/generators/carty/
 game_name = """
 
@@ -236,6 +237,7 @@ game_name = """
 ╚═════╝░╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 """
 
+# Winter wonderland screen for winners only
 # sourced from https://www.asciiart.eu/nature/snows
 snowflakes = """
                      *  .  *
