@@ -18,7 +18,7 @@ then
     python3 snowperson.py
 elif python --version 2>&1 | grep -q '^Python 3\.'
 then
-    echo "You have Python 3, let's play!"
+    echo "You have Python, let's play!"
     python snowperson.py
 else
     echo "Error: This program runs on Python 3, but it looks like Python 2 or older is installed. To install Python, check out https://installpython3.com/" >&2

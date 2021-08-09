@@ -1,5 +1,7 @@
 import lists_and_defs
 import ascii_art
+
+
 def play_game():
     won_lost = False
     melts = 0
@@ -29,7 +31,8 @@ def play_game():
                 else:
                     message = 'Yep, you got one!'
                     letters_guessed.append(guess)
-                    hidden = lists_and_defs.currently_revealed(guess, word, hidden)
+                    hidden = lists_and_defs.currently_revealed(
+                        guess, word, hidden)
                     if hidden == word:
                         won_lost = 'Won'
                         melts = 9
@@ -49,10 +52,13 @@ def play_game():
         print(f'YOU GOT IT! {word} was the word!')
     else:
         print(ascii_art.snow_scenes[7])
-        print(f'Your snowman melted! :-( The word was {word}. Better luck next time!')
+        print(
+            f'Your snowman melted! :-( The word was {word}. Better luck next time!')
     again = lists_and_defs.play_again()
     if again == 'Y':
         play_game()
     else:
         exit()
+
+
 play_game()

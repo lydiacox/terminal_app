@@ -14,14 +14,14 @@ Installation
 
 Download the files to a directory on your hard drive.
 
-Open terminal shell and navigate to the directory contaning this program.
+Open terminal shell and navigate to the directory containing this program.
 Enter the following text, followed by Enter/Return:
 chmod +x snowman.sh
 
 
 Running the Program
 
-Open terminal shell and navigate to the directory contaning this program.
+Open terminal shell and navigate to the directory containing this program.
 
 The enter the following text and press Enter/Return:
 ./snowman.sh

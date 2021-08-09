@@ -196,7 +196,7 @@ snow_scenes = (
               \\                 /
        *       \\_______________/
     """,
-# eigth snowman scene, puddle
+# eighth snowman scene, puddle
     """
     
          *
